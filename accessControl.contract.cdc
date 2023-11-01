@@ -73,3 +73,34 @@ pub contract SomeContract {
         self.testStruct = SomeStruct()
     }
 }
+
+
+
+// variable a
+//   read scope  : 1,2,3,4
+//   write scope : 1,2,3,4
+
+// variable b
+//   read scope  : 1,2,3,4
+//   write scope : 1
+
+// variable c
+//   read scope  : 1,2,3
+//   write scope : 1
+
+// variable d
+//   read scope  : 1
+//   write scope : 1
+
+// variable e
+//   read scope  : 1,2,3,4
+//   write scope : 2
+
+// function publicFunc
+//   can be called AREA : 1,2,3,4Acc
+
+// function contractFunc
+//   can be called AREA : 1,2,3
+
+// function privateFunc
+//   can be called AREA : 1
